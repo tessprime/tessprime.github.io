@@ -24,11 +24,16 @@ Docs are here for that:
 
 https://gohugo.io/hosting-and-deployment/hosting-on-github/
 
-And wow, this UI feels way better than gitlab.
+And wow, the workflow UI feels way better than gitlab.
 
 Issues run into:
   - baseUrl needs to be https or its going to look gnarly
     when the page tries to fetch http resources. Oops!
+    However, I discovered that the default gitlab workflow
+    was overriding this with
+    `--baseURL "${{ steps.pages.outputs.base_url }}/"`.
+    In order to get the correct behavior I just removed this,
+    
   - Github seems geared to use jekyll by default,
     but the above "Hosting on Github" page explains
     how to tweak that.

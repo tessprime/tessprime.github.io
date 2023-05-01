@@ -46,8 +46,8 @@ For this week, I'm not going to have a week plan I think
 just setup daily goals.
 
 Goals Today:
-  - Get Hugo up and running on github.
-  - Finish reading 'Chip Wars' and publish notes.
-  - Get OpenFOAM up and running and figure out how
+  - [x] Get Hugo up and running on github.
+  - [ ] Finish reading 'Chip Wars' and publish notes.
+  - [ ] Get OpenFOAM up and running and figure out how
     to have moving boundary conditions.
-  - Groceries.
+  - [ ] Groceries.

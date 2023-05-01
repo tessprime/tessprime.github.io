@@ -1,9 +1,9 @@
 ---
 title: "Getting Started"
 date: 2023-05-01T10:29:49-07:00
-draft: true
 ---
 
+# Setting up Hugo
 Alright, so I opted to go for using Hugo as the
 static content generator.
 
@@ -19,6 +19,22 @@ worked. Don't use the `apt-get` version, it'll be old and
 incompatible with random themes you come across online.
 
 Tricky bit is setting up the Github workflow pipeline.
+
+Docs are here for that:
+
+https://gohugo.io/hosting-and-deployment/hosting-on-github/
+
+And wow, this UI feels way better than gitlab.
+
+Issues run into:
+  - baseUrl needs to be https or its going to look gnarly
+    when the page tries to fetch http resources. Oops!
+  - Github seems geared to use jekyll by default,
+    but the above "Hosting on Github" page explains
+    how to tweak that.
+  - Old version of go didn't work with desired Hugo Theme.
+
+# Plan for today.
 
 For this week, I'm not going to have a week plan I think
 (subject to change, otherwise this would be a plan ;) ),

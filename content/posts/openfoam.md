@@ -28,3 +28,8 @@ the tutorial directories in openfoam and run the `Runall`
 script to build stuff.
 
 The documentation is... less than stellar.
+
+## Visualize Output
+
+Got it about as far as figuring out how to view the mesh and initial conditions I think. There's a youtube
+video (blech) describing how to do an animation.

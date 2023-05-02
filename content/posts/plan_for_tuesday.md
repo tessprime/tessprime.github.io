@@ -5,7 +5,7 @@ date: 2023-05-01T21:23:58-07:00
 
 What's the plan for Tuesday? We're going to consider the C function(s):
 
-```
+```c
 int f(int b) {
     printf("%d\n", b);
 }

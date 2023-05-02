@@ -1,5 +1,5 @@
 ---
-title: "Openfoam"
+title: "OpenFOAM"
 date: 2023-05-01T16:48:00-07:00
 ---
 # Goals

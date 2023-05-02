@@ -1,6 +1,7 @@
 ---
 title: "Getting Started"
 date: 2023-05-01T10:29:49-07:00
+summary: "Setting up hugo and Monday"
 ---
 
 # Setting up Hugo

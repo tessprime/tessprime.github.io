@@ -50,4 +50,5 @@ Goals Today:
   - [ ] Finish reading 'Chip Wars' and publish notes.
   - [ ] Get OpenFOAM up and running and figure out how
     to have moving boundary conditions.
-  - [ ] Groceries.
+  - [x] Groceries.
+  - [ ] Go running.

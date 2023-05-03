@@ -38,7 +38,7 @@ not what CodeQL is using, given that it's based off of datalog instead and has s
 existential predicates it can use instead. Want to know if nothing calls a function? Well you
 can just do this:
 
-```
+```codeql
 import java
 
 from Callable callee
@@ -94,7 +94,7 @@ Which is pretty neat. That said, one of the key things this brings up is "Wait, 
 Its not really clear when one should stop. Here, I stop when you hit a constant input. However, this doesn't
 seem to work with the following
 
-```
+```c
 #include <stdio.h>
 
 int f(int b) {
@@ -115,7 +115,7 @@ The query misses the `9`. This surprised me, I had expected it to hit the 9 and 
 digression on how I'd need to basically track the 9 and how it got transformed into a 10 as an actual
 output of this program. Looking at the docs for DataFlowConfiguration `hasFlow` reveals:
 
-```
+```codeql
  * Conceptually, this defines a graph where the nodes are `DataFlow::Node`s and
  * the edges are those data-flow steps that preserve the value of the node
  * along with any additional edges defined by `isAdditionalFlowStep`.

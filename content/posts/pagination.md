@@ -1,7 +1,6 @@
 ---
 title: "Pagination"
 date: 2023-05-11T09:16:48-07:00
-draft: true
 ---
 
 So fun thing about pagination, its a pain.

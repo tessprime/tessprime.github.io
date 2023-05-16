@@ -60,7 +60,7 @@ $$
 (Where $p(r)$ is the $r$-th prime.). So applying log we obtain
 
 $$
-\log_g s + \log_g h = a_1 \log_g 2 + a_2 \log_g a_2 \ldots a_r \log_g p(r)
+s + \log_g h = a_1 \log_g 2 + a_2 \log_g a_2 \ldots a_r \log_g p(r)
 $$
 
 Which is just a linear equation in $r$ variables (each $\log_g p_i$ is a variable).

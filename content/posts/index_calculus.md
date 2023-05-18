@@ -12,8 +12,8 @@ they're cool!)
 
 Rather, it uses the Index Calculus.
 
-So, recall that when we attempt to solve the discrete log of a target number $h$ modulo a prime $p$,
-in a base $g$, so what we're trying to do is find an $x$ such that $g^x=h\mod p$.
+The discrete log problem is given a number $h$ and a base number $g$
+both modulo a prime $p$, we want to find an $x$ such that $g^x=h\mod p$.
 
 So anyhow the Index Calculus says:
 

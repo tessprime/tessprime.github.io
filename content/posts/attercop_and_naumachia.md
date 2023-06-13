@@ -1,7 +1,6 @@
 ---
 title: "Attercop_and_naumachia"
 date: 2023-05-23T15:08:23-07:00
-draft: true
 ---
 > Old fat spider spinning in a tree!
 > Old fat spider can’t see me!
@@ -65,3 +64,10 @@ gateway can tell everyone its new mac address.
 Unfortunately, the issue is this is completely unauthenticated. There's no way
 for a recipient of this message to validate it came from the gateway. Hence,
 ARP poisoning.
+
+In short, a malicious node in the network (mac address 13:37:13:37)
+can tell any other node (say 192.168.1.2) in the network that the MAC
+address associated with 192.168.1.1 is actually 13:37:13:37, and can
+even tell the router "Hello, 192.168.1.1 is now 13:37:13:37".
+
+So yay! MITM baked into the standard. :)

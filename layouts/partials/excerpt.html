@@ -24,7 +24,7 @@
           {{ if not ( strings.Contains $summary "<p>" ) }}
             <p>{{ $summary }}</p>
           {{ else }}
-            {{ $summary | markdownify }}
+            {{ $summary | safeHTML }}
           {{ end }}
           <br>
           {{- $r := T "read_more" }}

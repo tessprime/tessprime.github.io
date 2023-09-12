@@ -6,7 +6,7 @@ math: true
 
 So there's this cool tweet:
 [![Sha Tweet](/images/sha_tweet.png)](https://twitter.com/lauriewired/status/1700982575291142594)
-
+<!--more-->
 So an obvious question is: "How likely is it that a tweet of this form exists for a given
 length?"
 

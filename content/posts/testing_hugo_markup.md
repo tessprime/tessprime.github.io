@@ -4,6 +4,7 @@ date: 2023-05-15T23:58:09-07:00
 draft: false
 ---
 It's a particle! In a box!
+<!--more-->
 
 <canvas id="particlecanvas" width="300" height="100"></canvas>
 <script>

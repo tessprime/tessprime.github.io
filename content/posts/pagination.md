@@ -13,6 +13,7 @@ in an inconsistent view of the data. The worst thing that can happen is
 if something that does exist at the initial query request does not get
 returned after iterating across all objects. This can happen if rows
 get added or removed between requests.
+<!--more-->
 
 This issue is extremely common since the dead simplest solution to solve
 the problem "How can I divvy up the results of this SQL query?" is to use

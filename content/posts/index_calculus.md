@@ -11,7 +11,7 @@ log step on the reduced prime (I'll probably do a write up for those later,
 they're cool!)
 
 Rather, it uses the Index Calculus.
-
+<!--more-->
 The discrete log problem is given a number $h$ and a base number $g$
 both modulo a prime $p$, we want to find an $x$ such that $g^x=h\mod p$.
 

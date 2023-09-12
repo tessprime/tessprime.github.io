@@ -9,6 +9,7 @@ perform static code analysis across all the code in GitHub called 'CodeQL', with
 on security vulnerability discovery. (Note, CodeQL was originally created by researchers
 and developed by their company Semmle back in 2006; Microsoft acquired them 5 years ago in
 2019 https://en.wikipedia.org/wiki/Semmle).
+<!--more-->
 
 Unfortunately, the system relies on creating a database, the format of which is not fully
 documented and the CLI used to create it is not opensource. Its an odd choice. The

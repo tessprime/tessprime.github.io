@@ -6,6 +6,7 @@ draft: false
 So picked up a yubikey, and am digging into how linux handles these
 sorts of things exactly. It looks like the linux-pam module delegates
 to pam-u2f, which appears to be written by Yubico themselves.
+<!--more-->
 
 On a separate note, you can jury rig the vscode's Intellisense system
 to use `compile_commands.json`. To my pleasant surprise, the gnome

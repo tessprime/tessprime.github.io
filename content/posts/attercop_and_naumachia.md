@@ -10,6 +10,8 @@ date: 2023-05-23T15:08:23-07:00
 
 https://www.ettercap-project.org/
 
+<!--more-->
+
 So many years ago TSR decided to introduce a monster
 known as 'Ettercap', which is largely believed to
 share a root with Attercop.

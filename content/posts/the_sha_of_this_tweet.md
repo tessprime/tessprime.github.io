@@ -13,19 +13,19 @@ length?"
 To be precise, we define our sentence to be of the form:
 
 ```python
+SENTENCE_PREFIX = "The SHA256 for this sentence begins with: "
 rawchars = list("0123456789abcdef")
-digits = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"]
+digits = ["zero", "one", "two", "three", "four", "five", "six", "seven",
+          "eight", "nine"]
 char_map = { a:b for (a,b) in zip(rawchars, digts + "abcdef")}
 def sentence(hash_prefix, sentence_prefix=SENTENCE_PREFIX):
     return sentence_prefix + ", ".join([char_map[p] for p in hash_prefix]) + "."
 ```
 
-Where `SENTENCE_PREFIX` is `"The SHA256 for this sentence begins with: "`.
-
 We can easily brute force this with:
 
 ```python
-def find_n_prefix(n, sentence_prefix=SENTENCE_PREFIX):
+def find_length_n_prefix(n, sentence_prefix=SENTENCE_PREFIX):
     for p in product(*([rawchars] * n)):
         s = sentence(p, sentence_prefix)
         h = hashlib.sha256(s.encode("ascii")).hexdigest()

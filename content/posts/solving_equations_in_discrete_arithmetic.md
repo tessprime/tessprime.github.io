@@ -25,4 +25,17 @@ That is
 $$ 6 C = 1 \mod 13 $$
 
 Now how can we solve this? Well we could try doing trial
-multiplication 
+multiplication, that is, go through all multiples of $6 mod 13$
+until we get an answer, but there's a better way. If this were
+a regular divison problem, we'd just divide both sides by six.
+We can do the same thing here, as long as we use
+the inverse of $ 6 mod 13 $. That is, we seek a number a such
+that
+
+$$ 6 * a + 13 * b = 1 $$
+
+such that $ 0 < a < 13 $. Finding such a number is performed
+by the euclidean algorithm. This works as follows:
+
+$$13 &= 2 * 6 + 1\
+   6 &= 

@@ -39,9 +39,13 @@ pub export fn _start() noreturn {
 }
 ```
 
+This results in a binary of 1k.
+
 Let us marvel for a moment at the clean, minimal generated code:
 
 ```asm
+$ objdump -d example
+
 00000000002011c4 <.text>:
   2011c4:       6a 01                   push   $0x1
   2011c6:       58                      pop    %rax

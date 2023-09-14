@@ -2,7 +2,7 @@
 title: "Small Binaries in Zig"
 date: 2023-09-14T15:02:09-07:00
 ---
-So [https://ziglang.org/](Zig) can create some pretty small binaries!
+So [Zig](https://ziglang.org/) can create some pretty small binaries!
 
 So I was doing a ctf last week and found that I needed to upload
 some binaries to a target machine with minimal tooling via a somewhat

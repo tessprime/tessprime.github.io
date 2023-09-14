@@ -39,7 +39,7 @@ pub export fn _start() noreturn {
 }
 ```
 
-Let us marvel for a mometn at the clean, minimal generated code:
+Let us marvel for a moment at the clean, minimal generated code:
 
 ```asm
 00000000002011c4 <.text>:

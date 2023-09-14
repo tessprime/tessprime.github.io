@@ -102,7 +102,7 @@ this will segfault.
 Ah, we've seen this before; stack alignment with the `vmovaps` instruction!
 
 Turns out the normal zig `_start` command does a little extra work to align the stack. A quick fix is simply to
-force a raw push at the begining to realign the stack. Once that is done, zig should keep things aligned.
+force a raw push at the beginning to realign the stack. Once that is done, zig should keep things aligned.
 
 ```zig
 const std = @import("std");

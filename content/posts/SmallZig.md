@@ -132,7 +132,7 @@ Note, some of this seems to be in flux. I had previously come across this post:
 https://zserge.com/posts/zig-the-small-language/
 
 Where they say to use `callConv(.Naked)` which unfortunately no longer works as
-of July (people on the support discord were also suprised by this).
+of July (people on the support [discord](https://discord.com/channels/605571803288698900/1150493944304652380/1150493944304652380) were also suprised by this).
 
 Anyhow, `zig` seems to be a nice language that may work as a more ergonomic
 replacement for assembly. :)

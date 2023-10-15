@@ -15,7 +15,7 @@ https://www.wireshark.org/docs/wsdg_html_chunked/ChCaptureExtcap.html
 Extcap is intended to provide a way to create Wireshark interfaces that
 are provided by an external program. Wireshark will invoke all programs
 in the wireshark extcap directories at startup and ask it to list it's interfaces.
-
+<!--more-->
 So I've written a simple python program that is systematically writing
 down what is being passed to it. There is an example python program which
 I'm using to get a basic idea of what the responses need to be:

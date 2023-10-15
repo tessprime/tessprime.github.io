@@ -81,3 +81,6 @@ but this time actually invoking with
 The `fifo` file is expected to be written to; Wireshark will simply wait for pcap entries to be written to it (or until the program exits).
 If you attempt to read from the fifo, the python program will just block; I'm assuming that Wireshark might sometimes write to it, but
 am unsure how that signalling works at the moment.
+
+Anyhow, this seems to be the bare minimum needed to understand how wireshark is communicating with these programs, plus the bare minimum
+needed to understand how to invoke the programs directly.

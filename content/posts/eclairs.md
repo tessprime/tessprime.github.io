@@ -6,6 +6,10 @@ math: true
 
 # Eclairs Writeup
 
+A problem from TCP1P Ctf.
+
+<!--more-->
+
 We are given the following Python code:
 
 ```py

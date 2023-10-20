@@ -234,6 +234,6 @@ flag^3 &=& m_3 \mod N_3
 $$
 
 This is a modular system of coprime numbers, so can be solved via the Chinese Remainder theorem to find the smallest
-number that satisfies each congruence. This number will also be *unique* up to $\mod N_1N_2N_3$, which means
+number that satisfies each congruence. This number will also be *unique* up to $N_1N_2N_3$, which means
 it will be the actual cube of the flag. Since this is a real integer cube, we can compute the cube root over the
 integers, rather than over one of the $N_i$ whose factorization is unknown.

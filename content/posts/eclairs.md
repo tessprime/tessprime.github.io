@@ -187,7 +187,7 @@ $$
 Which is just a *linear* equation in 9 variables. So we can just obtain 9 of these equations by querying for 9
 x values on the curve (we have to guess a bit since not all x's are on the curve),
 and solve for the nine unkonws. Then, we just pick the terms corresponding to known mulitples of $a$ and $b$
-(that is, the $3ax^7$ and $3 b x^6$ term).
+(that is, the $3ax^7$ and $3 b x^6$ terms).
 
 Once this is obtained, we are asked to compute $k*P$ where $k$ is a random number, and $P$ is a point
 on the curve.

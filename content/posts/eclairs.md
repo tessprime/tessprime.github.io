@@ -173,7 +173,7 @@ y^6&=& x^9 &+& \\\\
 \end{matrix}
 $$
 
-Then we blur our eyes a bit (and remember that x is a known value)
+Now, blur your eyes a bit (and remember that x is a known value)
 
 $$
 \begin{matrix}

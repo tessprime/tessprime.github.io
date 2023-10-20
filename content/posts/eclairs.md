@@ -96,7 +96,7 @@ while True:
         exit()
 ```
 
-The basic idea is that we are given a Elliptic Curve oracle which, when given a the x-coordinate, will compute 
+The basic idea is that we are given a Elliptic Curve oracle which, when given the x-coordinate, will compute 
 $\left(x^3,y^3\right)$ where $\left(x,y\right)$ is the point on the curve. However, we don't know the curve, or even the value of $n$,
 the Ring modulo $n$ that we're working with.
 

@@ -154,7 +154,8 @@ z4*x^3       + 6*z5*x^4 + 3*z6 *x^2 +
 ```
 
 Which is just a *linear* equation in 9 variables. So we can just obtain 9 more of these equations
-and solve for the nine unkonws. Then, we just pick the ones corresponding to mulitples of $a$ and $b$.
+and solve for the nine unkonws. Then, we just pick the terms corresponding to known mulitples of $a$ and $b$
+(that is, the $3ax^7$ and $3*b*x^6$ term).
 
 Once this is obtained, we are asked to compute $k*P$ where $k$ is a random number, and $P$ is a point
 on the curve. This is easily done in sage

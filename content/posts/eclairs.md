@@ -161,7 +161,7 @@ basically just trying to solve RSA with an exponent of 9. This could potentially
 be done if we knew the high bits of the values of $a$ and $b$ but we don't.
 
 However, we don't have to just restrict ourselves to *two* points, we can get as
-many as we want. Then we can say "Hey, let's rethink this, expanding the original
+many as we want. So let's rethink this. Expanding the original
 cubed value of $y^2$ we get
 
 $$

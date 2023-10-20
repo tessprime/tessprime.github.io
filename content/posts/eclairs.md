@@ -187,7 +187,7 @@ $$
 Which is just a *linear* equation in 9 variables. So we can just obtain 9 of these equations by querying for 9
 x values on the curve (we have to guess a bit since not all x's are on the curve),
 and solve for the nine unkonws. Then, we just pick the terms corresponding to known mulitples of $a$ and $b$
-(that is, the $3ax^7$ and $3 b x^6$ terms).
+(that is, the $3ax^7$ and $3 b x^6$ terms corresponding to the $z_1$ and $z_3$ variables).
 
 Once this is obtained, we are asked to compute $k*P$ where $k$ is a random number, and $P$ is a point
 on the curve.
@@ -233,4 +233,7 @@ flag^3 &=& m_3 \mod N_3
 \end{matrix}
 $$
 
-And apply CRT to obtain the flag.
+This is a modular system of coprime numbers, so can be solved via the Chinese Remainder theorem to find the smallest
+number that satisfies each congruence. This number will also be *unique* up to $\mod N_1N_2N_3$, which means
+it will be the actual cube of the flag. Since this is a real integer cube, we can compute the cube root over the
+integers, rather than over one of the $N_i$ whose factorization is unknown.

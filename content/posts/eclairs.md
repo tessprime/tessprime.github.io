@@ -101,7 +101,7 @@ $\left(x^3,y^3\right)$ where $\left(x,y\right)$ is the point on the curve. Howev
 the Ring modulo $n$ that we're working with.
 
 The first thing we can do is request a number of points. which will give us a number of $\left(x_i^3, y_i^3\right)$ points. Since we know
-the original $x_io$ points, we can compute the cube of that (not modulo $n$) and subtract the modulo'd version. We know that this should
+the original $x_i$ points, we can compute the cube of that (not modulo $n$) and subtract the modulo'd version. We know that this should
 be zero mod n, so we the number we get is a multiple of $n$. We can thus do this several times and compute the gcd of them all. This should
 give us with high probability the number $n$.
 
@@ -109,7 +109,7 @@ Next, we just need to determine $a$, and $b$. Now, we know that each point on th
 
 $$y^2 = x^3 + a x + b$$
 
-Since we're given y^3, we can instead cube both sides of this equation
+Since we're given $y^3$, we can instead cube both sides of this equation
 
 $$(y^3)^2 = (x^3 + a x + b)^3$$
 
@@ -129,7 +129,7 @@ a = I.elimination_ideal(b)
 a.roots()
 ```
 
-But this won't work since we'd have to compute the roots in $ZZ_n$, which is
+But this won't work since we'd have to compute the roots in $\mathbb{Z}_n$, which is
 basically just trying to solve RSA with an exponent of 9. This could potentially
 be done if we knew the high bits of the values of $a$ and $b$ but we don't.
 

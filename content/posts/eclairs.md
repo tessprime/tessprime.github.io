@@ -157,7 +157,7 @@ $$
 \end{matrix}
 $$
 
-Which is just a *linear* equation in 9 variables. So we can just obtain 10 more of these equations
+Which is just a *linear* equation in 9 variables. So we can just obtain 9 of these equations
 and solve for the nine unkonws. Then, we just pick the terms corresponding to known mulitples of $a$ and $b$
 (that is, the $3ax^7$ and $3 b x^6$ term).
 

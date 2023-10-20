@@ -129,7 +129,7 @@ def find_coordinates(x):
     return False
 ```
 Since we know the original $x_i$ points, we can compute the cube of that (not modulo $n$) and subtract the modulo'd version. We know that this should
-be zero mod n, so we the number we get is a multiple of $n$. We can thus do this several times and compute the gcd of them all. This should
+be zero mod n, so we know the number we get is a multiple of $n$. We can thus do this several times and compute the gcd of them all. This should
 give us with high probability the number $n$ (or at least, $n$ multiplied by a small prime).
 
 Next, we just need to determine $a$, and $b$. Now, we know that each point on the curve satisifies

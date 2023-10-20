@@ -135,25 +135,29 @@ be done if we knew the high bits of the values of $a$ and $b$ but we don't.
 
 However, we don't have to just restrict ourselves to *two* points, we can get as
 many as we want. Then we can say "Hey, let's rethink this, expanding the original
-cubed value of y we'd get
+cubed value of $y^2$ we get
 
-```bc
-x^9  + 3*a*x^7   + 3*a^2*x^5 + 3*b*x^6 + 
-       a^3*x^3   + 6*a*b*x^4 + 3*a^2*b*x^2 +
-       3*b^2*x^3 + 3*a*b^2*x + b^3
-- y^6  = 0
-```
+$$
+\begin{matrix}
+y^6&=& x^9 &+& \\\\
+&& 3\textcolor{red}{a}x^7&+& 3\textcolor{red}{a}^2x^5&+&3\textcolor{blue}{b}x^6 \\\\
+&&    \textcolor{red}{a}^3 x^3   &+& 6 \textcolor{red}{a} \textcolor{blue}{b} x^4 &+& 3 \textcolor{red}{a}^2 \textcolor{blue}{b} x^2 + \\\\
+&& 3 \textcolor{blue}{b}^2 x^3 &+& 3 \textcolor{red}{a} \textcolor{blue}{b}^2 x &+& \textcolor{blue}{b}^3\\\\
+\end{matrix}
+$$
 
 Then we blur our eyes a bit (and remember that x is a known value)
 
-```bc
-3 * z1 * x^7 + 3*z2*x^5 + 3*z3*x^6  +
-z4*x^3       + 6*z5*x^4 + 3*z6 *x^2 + 
-3*z7*x^3     + 3*z8 * x + z9
-- x^9 - y^6  = 0
-```
+$$
+\begin{matrix}
+3 \textcolor{green}{z_1}  x^7 &+& 3 \textcolor{green}{z_2} x^5 &+& 3 \textcolor{green}{z_3} x^6  &+& \\\\
+\textcolor{green}{z_4} x^3    &+& 6 \textcolor{green}{z_5} x^4 &+& 3 \textcolor{green}{z_6} x^2 &+& \\\\
+3 \textcolor{green}{z_7} x^3  &+& 3 \textcolor{green}{z_8} x   &+& \textcolor{green}{z_9} \\\\
+\left(- x^9 - y^6\right)  &=& 0 \\\\
+\end{matrix}
+$$
 
-Which is just a *linear* equation in 9 variables. So we can just obtain 9 more of these equations
+Which is just a *linear* equation in 9 variables. So we can just obtain 10 more of these equations
 and solve for the nine unkonws. Then, we just pick the terms corresponding to known mulitples of $a$ and $b$
 (that is, the $3ax^7$ and $3 b x^6$ term).
 

@@ -95,15 +95,42 @@ while True:
         print("??")
         exit()
 ```
-
 The basic idea is that we are given a Elliptic Curve oracle which, when given the x-coordinate, will compute 
 $\left(x^3,y^3\right)$ where $\left(x,y\right)$ is the point on the curve. However, we don't know the curve, or even the value of $n$,
 the Ring modulo $n$ that we're working with.
 
-The first thing we can do is request a number of points. which will give us a number of $\left(x_i^3, y_i^3\right)$ points. Since we know
-the original $x_i$ points, we can compute the cube of that (not modulo $n$) and subtract the modulo'd version. We know that this should
+The first thing we can do is request a number of points.
+```py
+    if choice == "1":
+        print("This point is generated using the following parameter:")
+        # encrypted because I don't want anyone to steal my cool curve >:(
+        print(pow(a,e,n))
+        print(pow(b,e,n))
+        x = int(input("x: "))
+        P = find_coordinates(x)
+        if P:
+            print(P)
+        else:
+            print("Not found :(")
+```
+which will give us a number of $\left(x_i^3, y_i^3\right)$ points, with $x_i$ and $y_i$ on the curve. 
+```py
+def lift_x(x):
+    y = sqrt_mod(x**3 + a*x + b)
+    if y:
+        return (x, y)
+    return False
+
+def find_coordinates(x):
+    P = lift_x(x)
+    if P:
+        x,y = P
+        return (pow(x,e,n), pow(y,e,n))
+    return False
+```
+Since we know the original $x_i$ points, we can compute the cube of that (not modulo $n$) and subtract the modulo'd version. We know that this should
 be zero mod n, so we the number we get is a multiple of $n$. We can thus do this several times and compute the gcd of them all. This should
-give us with high probability the number $n$.
+give us with high probability the number $n$ (or at least, $n$ multiplied by a small prime).
 
 Next, we just need to determine $a$, and $b$. Now, we know that each point on the curve satisifies
 
@@ -162,7 +189,24 @@ and solve for the nine unkonws. Then, we just pick the terms corresponding to kn
 (that is, the $3ax^7$ and $3 b x^6$ term).
 
 Once this is obtained, we are asked to compute $k*P$ where $k$ is a random number, and $P$ is a point
-on the curve. This is easily done in sage
+on the curve.
+
+```py
+def captcha():
+    while True:
+        x = random.randint(1, n)
+        P = lift_x(x)
+        if P : break
+    k = random.randint(1,n)
+    print("HOLD UP!!!!")
+    print("YOU ARE ABOUT TO DO SOMETHING VERY CONFIDENTIAL")
+    print("WE NEED TO MAKE SURE THAT YOU ARE NOT A ROBOT")
+    print(f"Calculate {k} X {P}")
+    ans = input("Answer: ")
+    return ans == str(E.power(P,k))
+```
+
+This is easily done in sage
 
 ```py
 C = EllipticCurve(Zmod(n), [a,b])
@@ -172,6 +216,11 @@ print(k*P)
 
 And we spit that back (making sure that we have it in the right format). However, we aren't given
 the flag at this point, rather, we are given the *cube* of the flag.
+
+```py
+        if captcha():
+            print(pow(flag, e, n))
+```
 
 No Problem! Since all parameters are random, we simply run this three more times. This will give us
 

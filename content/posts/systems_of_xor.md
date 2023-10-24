@@ -3,6 +3,7 @@ title: "Systems of Xor"
 subtitle: "How likely is a random matrix over $\\mathbb{Z}_2$ to be invertible?"
 date: 2023-10-23T10:46:45-07:00
 math: true
+tags: ["math", "ctfs"]
 ---
 In a recent CTF, we were given the ability to obtain the signatures of
 arbitrary messages, and we were given the signature of the flag.

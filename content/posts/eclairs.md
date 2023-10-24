@@ -4,8 +4,6 @@ date: 2023-10-17T19:55:41-07:00
 math: true
 ---
 
-# Eclairs Writeup
-
 A problem from TCP1P Ctf.
 
 <!--more-->

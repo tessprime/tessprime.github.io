@@ -1,5 +1,6 @@
 ---
 title: "Eclairs"
+subtitle: "Any problem can be a linear problem if it tries hard and believes in itself."
 date: 2023-10-17T19:55:41-07:00
 math: true
 ---

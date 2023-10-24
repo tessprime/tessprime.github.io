@@ -50,8 +50,15 @@ $$
 If $x$ is known, we can compute the signature, but if the signature is known,
 we can compute $x$ by solving the matrix.
 
+However, this doesn't always work. When I ran my attack script against a local
+version, it failed at first. Running it a few more times revealed that it
+worked *sometimes*. In retrospect this should be expected as the rows of
+the matrix are essentially chosen at random, there's no reason to assume
+that they will be linearly independent, but the algorithm used by sage will
+still produce *some* value after it peforms elimination.
+
 So, the question then becomes, if the signature function is basically random,
-but linear, what is the probability that the resulting matrix is solveable?
+what is the probability that the resulting matrix is solveable?
 
 Well, if we think of the rows as adding a new vector each time, then when
 we add the final vector, assuming that we are linearly independent up until

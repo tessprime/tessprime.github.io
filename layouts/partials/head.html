@@ -47,4 +47,4 @@
 {{- partial "scripts/google/tag-manager" (dict "noscript" false) }}
 
 <!-- katex -->
-{{ if .Params.math }}{{ partial "helpers/katex.html" . }}{{ end }}
+{{ partial "helpers/katex.html" . }}

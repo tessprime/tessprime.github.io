@@ -1,6 +1,7 @@
 ---
 title: "Snake"
 date: 2023-05-11T19:45:22-07:00
+tags: ["hacking"]
 ---
 
 Well this is interesting. CISA has published an article

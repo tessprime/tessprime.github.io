@@ -1,6 +1,6 @@
 ---
 title: "Systems of Xor"
-subtitle: "How likely is a random Matrix over $\\mathbb{Z}_2$ to be invertible?"
+subtitle: "How likely is a random matrix over $\\mathbb{Z}_2$ to be invertible?"
 date: 2023-10-23T10:46:45-07:00
 math: true
 ---

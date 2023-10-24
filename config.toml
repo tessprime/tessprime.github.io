@@ -2,6 +2,6 @@ baseURL = "https://cwgreene.github.io/"
 languageCode = "en-us"
 title = "Of Questionable Relevancy"
 theme = "clarity"
-
 [markup.goldmark.renderer]
 unsafe= true
+enableMathNotation=true

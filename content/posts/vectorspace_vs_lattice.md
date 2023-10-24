@@ -1,7 +1,8 @@
 ---
-title: "Vectorspace_vs_lattice"
+title: "Vectorspace vs lattice"
 date: 2023-09-21T10:14:39-07:00
 math: true
+tags: ["math", "number theory", "lattices"]
 ---
 So given a collection of linearly independent
 vectors

@@ -1,6 +1,7 @@
 ---
 title: "Small Binaries in Zig"
 date: 2023-09-14T15:02:09-07:00
+tags: ["zig"]
 ---
 So [Zig](https://ziglang.org/) can create some pretty small binaries!
 

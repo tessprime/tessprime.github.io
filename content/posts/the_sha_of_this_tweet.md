@@ -2,6 +2,7 @@
 title: "The SHA of this tweet"
 date: 2023-09-11T13:28:30-07:00
 math: true
+tags: ["math", "probability"]
 ---
 
 So there's this cool tweet:

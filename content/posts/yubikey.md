@@ -1,6 +1,7 @@
 ---
 title: "Yubikey"
 date: 2023-07-29T15:17:59-07:00
+tags: ["hardware"]
 draft: false
 ---
 So picked up a yubikey, and am digging into how linux handles these

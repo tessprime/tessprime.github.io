@@ -1,6 +1,7 @@
 ---
-title: "Attercop_and_naumachia"
+title: "Attercop and Naumachia"
 date: 2023-05-23T15:08:23-07:00
+tags: ["networking", "hacking"]
 ---
 > Old fat spider spinning in a tree!
 > Old fat spider can’t see me!

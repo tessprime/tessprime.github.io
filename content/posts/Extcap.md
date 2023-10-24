@@ -1,6 +1,7 @@
 ---
 title: "Extcap"
 date: 2023-10-15T12:26:52-07:00
+tags: ["notes", "networking", "hardware"]
 ---
 
 So the Wireshark explicit documentation on extcap is somewhat sparse,

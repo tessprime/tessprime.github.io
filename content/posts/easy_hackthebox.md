@@ -1,6 +1,7 @@
 ---
 title: "'Easy' HackTheBox Challenge"
 date: 2023-09-20T17:25:58-07:00
+tags: ["hack the box", "hacking"]
 ---
 
 Well it turns out that I'm bad at even 'easy' HackTheBox Challenges. :)

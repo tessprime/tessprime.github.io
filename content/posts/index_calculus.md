@@ -2,8 +2,8 @@
 title: "Index Calculus"
 date: 2023-05-16T02:33:39-07:00
 math: true
-Tag: ["Number Theory", "math"]
-Category: ["Number Theory"]
+tags: ["Number Theory", "math"]
+categories: ["Number Theory"]
 ---
 Alright, so it turns out that Pari doesn't use just pohlig helman, or rather
 it doesn't proceed use Baby Step Giant Step or Pohlard Rho for the discrete

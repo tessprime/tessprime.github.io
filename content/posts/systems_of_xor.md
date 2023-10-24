@@ -4,11 +4,9 @@ subtitle: "How likely is a random Matrix over $\\mathbb{Z}_2$ to be invertible?"
 date: 2023-10-23T10:46:45-07:00
 math: true
 ---
-
 In a recent CTF, we were given the ability to obtain the signatures of
 arbitrary messages, and we were given the signature of the flag.
-
-<!-- more -->
+<!--more-->
 
 In this particular case, a critical property of the signature function
 allowed us to recover the flag fairly easily, without worrying about
@@ -87,4 +85,4 @@ converges to a fixed number rather than *very* slowly converge to zero.
 
 Time to dust off ye olde calculus series tests.
 
-<!-- TODO: Prove that the answer converges quickly>
+<!-- TODO: Prove that the answer converges quickly -->

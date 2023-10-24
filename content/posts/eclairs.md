@@ -5,7 +5,6 @@ math: true
 ---
 
 A problem from TCP1P Ctf.
-
 <!--more-->
 
 We are given the following Python code:

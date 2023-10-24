@@ -21,10 +21,12 @@ space. If you have n+1 vectors, you
 *know* that you can get an equivalent
 n vectors from that set of vectors.
 
-This is *not* the case with Lattices! To see
+This is *not* the case with Lattices (though you can
+find *a* spanning set of dimension n)! To see
 why, let's focus on the 1 dimensional case.
 
 The vector (1) will span a lattice of all
 integers. The lattice spanned by (2) or (3) will not.
 However, you can recover the original lattice
-with the span (2) and (3)! You can 
+with the span (2) and (3)! If you have
+(4), and (6) then you can't even get (1) out of this.

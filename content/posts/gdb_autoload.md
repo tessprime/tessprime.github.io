@@ -1,6 +1,7 @@
 ---
 title: "Gdb autoloading of local .gdbinit files"
 date: 2023-10-25T17:27:16-07:00
+tags: ["gdb", "notes"]
 ---
 So while figuring out how to attach the vscode to debug the openjdk, I learned the rather
 surprising fact that apparently the jvm uses segfaults as a signalling mechanism in

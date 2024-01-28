@@ -2,7 +2,6 @@
 title: "Fixed Points for RSA"
 date: 2024-01-27T22:42:18-08:00
 subtitle: You've forgotten the essence of factoring.
-draft: True
 tags: ["Number Theory", "math"]
 categories: ["Number Theory"]
 ---

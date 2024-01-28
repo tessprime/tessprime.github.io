@@ -39,7 +39,8 @@ That last expression is the product of two numbers, both of which we know,
 that when multiplied together yield a multiple of $n$. Huzzah! We've found
 the solution, right?
 
-Not quite. If $x$ is invertible (it may not be though) then $x^{e-1} = 1$. So
+Not quite. If $x$ is invertible (if its not then it shares a factor with n and
+we're done) then $x^{e-1} = 1$. So
 we've only found the shocking revelation that $1-1=0$ is a factor of $n$. The
 issue is that x^{e-1} is quite large so there's nothing stopping it from being
 one more than a multiple of $n$.

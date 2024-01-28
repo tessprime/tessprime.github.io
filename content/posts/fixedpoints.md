@@ -2,6 +2,8 @@
 title: "Fixed Points for RSA"
 date: 2024-01-27T22:42:18-08:00
 subtitle: You've forgotten the essence of factoring.
+tags: ["Number Theory", "math"]
+categories: ["Number Theory"]
 ---
 
 Suppose that you were merrily encrypting your data and sending

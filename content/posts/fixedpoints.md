@@ -37,7 +37,16 @@ x(x^{e-1} - 1) &=& 0 \mod n\\\\
 $$
 
 That last expression is the product of two numbers, both of which we know,
-that when multiplied together yield a multiple of $n$. This is somewhat
-of importance in the factoring $n$.
+that when multiplied together yield a multiple of $n$. Huzzah! We've found
+the solution, right?
 
-I spent way too much time puzzled about how this works. *sigh*.
+Not quite. If $x$ is invertible (it may not be though) then $x^{e-1} = 1$. So
+we've only found the shocking revelation that $1-1=0$ is a factor of $n$. The
+issue is that x^{e-1} is quite large so there's nothing stopping it from being
+one more than a multiple of $n$.
+
+However, suppose we run with $x^{e-1} = 1 \mod n$ instead. Now, $e-1$ is
+going to be an even number which means we can find a new $x$ such $x^2=1$.
+*This* works, because $x^2-1=0$ implies $(x+1)*(x-1)=0$. *This* time, both
+$x+1$ and $x-1$ can't be just $n$ because they're smaller than it, so they
+must contain a multiple of $p$ and the other must be a multiple of $q$.

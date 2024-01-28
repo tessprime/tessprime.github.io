@@ -8,7 +8,7 @@ Suppose that you were merrily encrypting your data and sending
 them to your friend whose public key he gave you and you happen
 to find some data that remains unchanged after exponentiation.
 
-That is, you have found a number $x$ such that $x^e=x mod n$.
+That is, you have found a number $x$ such that $x^e=x \mod n$.
 
 You can now factor their number.
 
@@ -26,9 +26,11 @@ but you made one crucial mistake. You forgot about the essence of factoring.
 It's all about the *ring*.
 
 $$
-x^e = x mod n
-x^e - x = 0 mod n
-x*(x^{e-1} - 1 = 0 mod n
+\begin{matrix}
+x^e &=& x \mod n \\
+x^e - x &=& 0 \mod n \\
+x*(x^{e-1} - 1 &=& 0 \mod n
+\end{matrix}
 $$
 
 That last expression is the product of two numbers, both of which we know,

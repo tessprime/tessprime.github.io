@@ -27,9 +27,9 @@ It's all about the *ring*.
 
 $$
 \begin{matrix}
-x^e &=& x \mod n \\
-x^e - x &=& 0 \mod n \\
-x*(x^{e-1} - 1 &=& 0 \mod n
+x^e &=& x \mod n \\\\
+x^e - x &=& 0 \mod n \\\\
+x(x^{e-1} - 1) &=& 0 \mod n\\\\
 \end{matrix}
 $$
 

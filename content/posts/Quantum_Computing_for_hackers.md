@@ -11,11 +11,12 @@ exposes the following API[^1].
 
 ## QWS Official API Documentation
 
-* `func CreateSystem_v1 (number_of_qubits : int) -> SystemJSON`
-* `func CreateOperator_v1 (matrix : Matrix, system : SystemID) -> OperatorID`
-* `func Manipulate_v1 (system : SystemID, operator: OperatorID)`
-* `func Measure_v1 (qubit : QubitID) -> Pair<QubitID, bool>`
-
+```
+func CreateSystem_v1 (number_of_qubits : int) -> SystemJSON
+func CreateOperator_v1 (matrix : Matrix, system : SystemID) -> OperatorID
+func Manipulate_v1 (system : SystemID, operator: OperatorID)
+func Measure_v1 (qubit : QubitID) -> Pair<QubitID, bool>
+```
 
 * `CreateSystem_v1` intializes a specified number of new qubits. Behind the scenes
 a classical system implementing this interface will implement a complex
@@ -30,10 +31,10 @@ The SystemJSON response contains
 }
 ```
 
-Where SystemID and QubitID are returned as strings. These are opaque
+Where `SystemID` and `QubitID` are returned as strings. These are opaque
 identifiers.
 
-QWS will raise a QuotaExceededException if your account exceeds it's quota
+QWS will raise a `QuotaExceededException` if your account exceeds it's quota
 of Qubits. Please contact QWS for support to raise this quota and discuss
 billing details.
 
@@ -44,22 +45,24 @@ inverse be equal to it's transpose (with the signs of any imaginary parts
 of numbers swapped). Physics nerds would summarize this as "It's inverse
 is equal to it's Hermitian (or Conjugate) Tranpose.
 
-If the matrix does not satisfy these constraint, an InvalidOperator exception will
+If the matrix does not satisfy these constraint, an `InvalidOperator` exception will
 be raised from QWS and no OperatorID will be created.
 
 * `Manipulate_v1` This will make a request to apply a previously specified operator
 to the remote state. 
 
-API Calls will return a NoSuchOperator Exception if the OperatorID is not associated with
+API Calls will return a NoSuchOperator Exception if the `OperatorID` is not associated with
 the supplied system.
 
-* `Measure_V1` 
+* `Measure_V1` When a qubit is measured
 
 In addition to the above operators QWS provides the following convenience apis for
 making it easier to create Operators (and save you bandwidth)
 
+```
 func CreateHadamard(qubit : QubitID) -> OperatorID
 func CreateControlledNOT(qubit1 : QubitID, qubit2 : QubitID) -> OperatorID
+```
 
 # TODO: Actually talk a bit about how gates update the state
 

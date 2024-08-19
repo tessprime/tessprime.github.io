@@ -1,7 +1,7 @@
 ---
 title: "Golden Ticket"
 date: 2024-08-18T17:18:56-07:00
-draft: true
+tags: ["ctfs", "math"]
 ---
 
 # Golden Ticket (idek 2024)
